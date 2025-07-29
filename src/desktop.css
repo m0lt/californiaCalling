@@ -1,0 +1,407 @@
+/*!DESKTOP FIRST: Von Desktop zu Mobile Design */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(./fonts/Inter-VariableFont.ttf);
+}
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora-VariableFont.ttf);
+}
+@font-face {
+  font-family: WorkSans;
+  src: url(./fonts/WorkSans-VariableFont.ttf);
+}
+
+:root {
+  font-family: WorkSans;
+  color: white;
+}
+
+body {
+  width: 100%;
+  background-color: black;
+}
+
+p {
+}
+
+.content {
+  /* max-width: 1400px; */
+  width: 1200px;
+  /* width: 100%; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+button {
+  border: 1px solid white;
+  padding: 12px 32px;
+  background-color: black;
+  font-family: WorkSans;
+  color: white;
+}
+
+/* ![=================== hero ===================] */
+
+#hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#heroTop {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#verticalLine {
+  width: 2px;
+  height: 180px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 60px;
+}
+
+h1 {
+  font-family: Inter;
+  font-size: 96px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 80%;
+  margin: 30px 0 30px 0;
+}
+
+h1 span:first-child {
+  color: white;
+}
+
+h1 span:last-child {
+  color: black;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+#heroFooter {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+#heroFooter img {
+  width: 40px;
+}
+
+/* ![=================== facts ===================] */
+
+#facts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 155px;
+}
+
+#facts h2 {
+  font-family: Inter;
+  font-size: 96px;
+  font-weight: 700;
+  width: 1000px;
+}
+
+#zdf {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.smallText {
+  font-family: WorkSans;
+  font-size: 14px;
+}
+.bigText {
+  font-family: Inter;
+  font-size: 86px;
+  font-weight: 700;
+}
+
+/* ![=================== stuck in the middle ===================] */
+
+#stuckInTheMiddle {
+  width: 100%;
+}
+
+#stuckUpper,
+#stuckLower {
+  background-color: white;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 400px 0 400px 0;
+  position: relative;
+  overflow: visible;
+}
+
+#stuckInTheMiddle h2 {
+  font-family: Inter;
+  font-size: 86px;
+  font-weight: 700;
+  width: 450px;
+  color: black;
+  line-height: 90%;
+}
+#stuckInTheMiddle p {
+  color: black;
+  width: 450px;
+  line-height: 30px;
+}
+
+#action1 {
+  position: absolute;
+  top: -10%;
+  right: 10%;
+}
+#action2 {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+#action3 {
+  position: absolute;
+  bottom: 25%;
+  right: 0%;
+}
+#action4 {
+  position: absolute;
+  bottom: 0%;
+  left: 20%;
+}
+
+#action5 {
+  position: absolute;
+  top: 10%;
+  right: 25%;
+}
+#action6 {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+}
+#action7 {
+  position: absolute;
+  bottom: -10%;
+  right: 20%;
+}
+
+/* ![=================== bears ===================] */
+
+.bearWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* ?[=================== the golden bear ===================] */
+
+#goldenBearWrapper,
+#poppyBearWrapper {
+  margin: 160px 0 160px 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#goldenBearWrapper,
+#poppyBearWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#goldenBear h2,
+#poppyBear h2 {
+  font-family: Inter;
+  font-size: 86px;
+  font-weight: 700;
+  width: 450px;
+  color: white;
+  line-height: 90%;
+}
+
+#chonkyText {
+  font-family: Inter;
+  font-size: 30px;
+  line-height: 100%;
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+#goldenBearImgWrapper,
+#poppyBearImgWrapper {
+  position: relative;
+  /* height: 700px; */
+}
+
+#bear1 {
+  margin-bottom: -10%;
+  /* position: absolute;
+  bottom: 0%;
+  left: 20%; */
+}
+#bear2 {
+  position: relative;
+  /* bottom: -10%;
+  right: 0%; */
+  margin-left: -5%;
+  margin-bottom: -5%;
+  z-index: 300 !important;
+}
+
+/* ?[=================== the poppy bear ===================] */
+
+#poppyBear {
+  background-color: #fff;
+  width: 100%;
+  color: black;
+}
+
+#poppyBear h2 {
+  color: black;
+}
+
+#circleTextWrapper {
+  position: relative;
+  height: 200px;
+  z-index: 200;
+  overflow: hidden;
+}
+#circleTextWrapper img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(30%, -30%) rotate(0deg);
+  }
+  to {
+    transform: translate(30%, -30%) rotate(360deg);
+  }
+}
+
+#bear3 {
+  position: relative;
+  margin-right: -10%;
+  margin-bottom: 10%;
+
+  z-index: 200;
+}
+#bear4 {
+  position: relative;
+  z-index: 100;
+}
+
+/* ![=================== footer ===================] */
+
+footer {
+  position: relative;
+  z-index: -100;
+  overflow: hidden;
+}
+
+footer p {
+  font-size: 12px;
+  font-weight: 200;
+  padding-bottom: 20px;
+}
+
+footer #chonkyText {
+  line-height: 150%;
+}
+
+#scrollFooterWrapper {
+  transform: translate(20%, -20%) rotate(45deg);
+}
+
+#scrollFooter {
+  animation: scroll 10s linear infinite alternate;
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(40%);
+  }
+}
+
+#scrollFooter p {
+  font-family: Lora;
+  font-size: 88px;
+  color: black;
+  background-color: #fff;
+  display: inline;
+  padding-bottom: 0;
+}
+
+#year {
+  color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+#leftFooter {
+  margin-bottom: 80px;
+}
+
+#bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#socials {
+  display: flex;
+  padding-bottom: 20px;
+  gap: 5px;
+}
+
+#socials img {
+  object-fit: contain;
+  width: 20px;
+  height: auto;
+}
+
+#bottomRight {
+  display: flex;
+  align-items: end;
+  gap: 5px;
+}
+
+#bottomRight img {
+  object-fit: contain;
+  width: 70px;
+  height: auto;
+}
